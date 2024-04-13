@@ -147,7 +147,7 @@ button {
 
   .landing__footer {
     width: 100%;
-    margin: 3.9rem auto;
+    margin: 3.9rem auto 1rem;
     justify-content: center;
     gap: 10px;
     float: none;
