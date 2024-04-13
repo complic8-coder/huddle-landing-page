@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 3.3rem 4.3rem;
+  color: var(--white);
+  background: url(./images/bg-desktop.svg) no-repeat, var(--violet);
+}
+
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 216px;
+}
+
+.landing__content {
+  margin: 5rem 0.3rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 40px;
+}
+
+.landing__illustration {
+  max-width: 100%;
+}
+
+.content__right {
+  max-width: 520px;
+  margin-top: 2.8rem;
+}
+
+.text__header {
+  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.55;
+}
+
+.text__para {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.button--register {
+  padding: 14px 4rem;
+  color: var(--violet);
+  border-radius: 40px;
+  background: var(--white);
+  font-size: 18px;
+  box-shadow: 0 6px 12px 0 hsla(0, 0%, 0%, 0.4);
+  transition: 0.1s ease;
+}
+
+.button--register:hover {
+  color: var(--white);
+  background: var(--soft-magenta);
+}
+
+.landing__footer {
+  margin: 1.3rem 10px 2.5rem;
+  display: flex;
+  gap: 16px;
+  float: right;
+}
+
+.button--socials {
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.1s ease;
+}
+
+.button--socials:hover {
+  color: var(--soft-magenta);
+  border-color: var(--soft-magenta);
+}
+
+@media (max-width: 1200px) {
+  .landing__content {
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 2rem 2.15rem;
+    background: url(./images/bg-mobile.svg) no-repeat fixed, var(--violet);
+    background-size: 100%;
+  }
+
+  .header__logo {
+    width: 128px;
+  }
+
+  .landing__content {
+    margin: 3.4rem 0.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .content__right {
+    text-align: center;
+  }
+  
+  .text__header {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 1.48;
+    letter-spacing: -0.1px;
+  }
+
+  .text__para {
+    font-size: 16px;
+  }
+
+  .button--register {
+    padding: 12px 4.7rem;
+    font-size: 12px;
+  }
+
+  .landing__footer {
+    width: 100%;
+    margin: 3.9rem auto;
+    justify-content: center;
+    gap: 10px;
+    float: none;
+  }
+
+  .button--socials {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
